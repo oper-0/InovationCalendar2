@@ -49,17 +49,17 @@ class Window(QWidget):
         layout.addLayout(header)
         layout.addWidget(calendar)
 
-        layout.addWidget(MyFooterImage())
+        layout.addWidget(MyFooterImage(self.move, self.x, self.y))
 
         self.setLayout(layout)
 
-    def mousePressEvent(self, event): # todo rework this shit
-        self.oldPos = event.globalPosition().toPoint()
-
-    def mouseMoveEvent(self, event): # todo rework this shit
-        delta = QPoint(event.globalPosition().toPoint() - self.oldPos)
-        self.move(self.x() + delta.x(), self.y() + delta.y())
-        self.oldPos = event.globalPosition().toPoint()
+    # def mousePressEvent(self, event): # todo rework this shit
+    #     self.oldPos = event.globalPosition().toPoint()
+    #
+    # def mouseMoveEvent(self, event): # todo rework this shit
+    #     delta = QPoint(event.globalPosition().toPoint() - self.oldPos)
+    #     self.move(self.x() + delta.x(), self.y() + delta.y())
+    #     self.oldPos = event.globalPosition().toPoint()
 
 
 App = QApplication(sys.argv)
