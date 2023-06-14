@@ -27,7 +27,7 @@ class InnovationCalendar(QCalendarWidget):
         # self.marks = self.load_marks()
         # self.holidays = self.load_holidays()
 
-        self._generate_dates_data() # todo delete me
+        # self._generate_dates_data() # todo delete me
 
         # self.build_context_menu()
 
@@ -153,6 +153,8 @@ class InnovationCalendar(QCalendarWidget):
             {DateDataFields.date: QDate(2023, 5, 23), DateDataFields.message: 'Наряд',
              DateDataFields.type: DateType.MESSAGE},
             {DateDataFields.date: QDate(2023, 5, 5), DateDataFields.message: 'Строевой смотр',
+             DateDataFields.type: DateType.MESSAGE},
+            {DateDataFields.date: QDate(2023, 5, 5), DateDataFields.message: 'Концерт в 18:00',
              DateDataFields.type: DateType.MESSAGE},
             {DateDataFields.date: QDate(2023, 5, 1), DateDataFields.message: 'Праздник 1 мая',
              DateDataFields.type: DateType.HOLIDAY},

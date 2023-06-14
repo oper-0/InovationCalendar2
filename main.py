@@ -33,6 +33,7 @@ class Window(QWidget):
         w = 380
         h = 500
         self.setFixedSize(w, h)
+        self.move(4700, 20)
 
         layout = QVBoxLayout()
         header = QHBoxLayout()

@@ -1,0 +1,1 @@
+C:\Users\4NR_Operator_34\AppData\Roaming\Python\Python310\site-packages\PyInstaller>python __main__.py C:\Users\4NR_Operator_34\Favorites\chernika-34\dev\InovationCalendar2\main.py --noconsole --add-data "C:\Users\4NR_Operator_34\Favorites\chernika-34\dev\InovationCalendar2\assets;assets" --name lab2Calendar --noconfirm
