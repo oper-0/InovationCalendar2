@@ -23,7 +23,7 @@ class InnovationCalendar(QCalendarWidget):
 
         self.dates_data = []
 
-        self.dataPath: str = r'datesData.pickle'
+        self.dataPath: str = r'assets/datesData.pickle'
         # self.marks = self.load_marks()
         # self.holidays = self.load_holidays()
 
